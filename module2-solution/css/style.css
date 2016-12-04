@@ -1,0 +1,82 @@
+
+/********** Base styles **********/
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+h1{
+	text-align: center;
+	margin: 15px 0px 15px 0px; 
+	font-size: 175%;
+}
+.block{
+	border: 1px solid #000;
+	background-color: #ebebeb;	
+}
+p{
+	clear:right;
+	padding: 10px;
+}
+p.title{
+	border-width: 0px 0px 1px 1px;
+	border-color: #000;
+	border-style: solid;
+	text-align: center;
+	font-size: 125%;
+	padding: 2px;
+	width: 120px;
+	float: right;	
+	position: relative;
+}
+
+#Chicken{
+	background-color: #fdc944;
+}
+#Beef{
+	background-color: #e5baba;
+}
+#Sushi{
+	background-color: #c0d9db;
+}
+
+/********** Large devices only **********/
+@media (min-width: 992px) {
+  .block {
+    float: left;
+    width: 31.33%;
+    margin: 1%;
+  }
+  body{
+  	padding: 1%
+  }
+
+}
+/********** Medium devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  .block {
+    float: left;
+    width: 48%;
+	margin: 1%;
+  }
+  #last{
+    width: 98%;
+	margin: 1%;
+  }
+  body{
+  	padding: 1%
+  }
+
+}
+/********** Small devices only **********/
+@media (max-width: 767px){
+  .block {
+  	float: left;
+    width: 90%;
+	margin: 2.5% 5% 2.5% 5%;
+  }
+}
