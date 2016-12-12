@@ -24,6 +24,14 @@
 .row .text-center{
   font-weight: bold;
 }
+.category-tile{
+    position: relative;
+  border: 2px solid #000;
+  overflow: hidden;
+  padding: 10px;
+  margin: 0 0 10px;
+  background-color: #ccc;
+}
 
 /********** Large devices only **********/
 @media (min-width: 1200px) {
